@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            flex-basis: calc(33.333% - 2rem);
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #6e8efb;
+            margin-top: 0;
+        }
+        
+        .cta {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .feature-card {
+                flex-basis: 100%;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Website</h1>
+            <p>A clean, responsive design for your content</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="hero">
+            <h1>Create Something Amazing</h1>
+            <p>This simple website template gives you a great starting point for your web projects.</p>
+        </section>
+        
+        <section class="features">
+            <div class="feature-card">
+                <h3>Responsive Design</h3>
+                <p>This website looks great on all devices, from mobile phones to desktop computers.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Modern Styling</h3>
+                <p>Clean aesthetics with subtle animations and a pleasing color palette.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Easy to Customize</h3>
+                <p>Simple HTML and CSS structure makes it easy to modify and extend.</p>
+            </div>
+        </section>
+        
+        <section class="cta">
+            <h2>Ready to Get Started?</h2>
+            <p>Download this template and begin creating your own amazing website today.</p>
+            <a href="#" class="button">Learn More</a>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Simple Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html
